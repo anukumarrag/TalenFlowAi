@@ -1,0 +1,11 @@
+com/talentflow/common/dto/InterviewResponse.class
+com/talentflow/common/dto/JdResponse.class
+com/talentflow/common/dto/ResumeUploadResponse.class
+com/talentflow/common/model/InterviewTranscript.class
+com/talentflow/common/model/InterviewTranscript$QAPair.class
+com/talentflow/common/dto/InterviewRequest.class
+com/talentflow/common/dto/JdRequest.class
+com/talentflow/common/dto/MatchResult.class
+com/talentflow/common/dto/CandidateScorecard.class
+com/talentflow/common/dto/EvaluationRequest.class
+com/talentflow/common/model/ResumeData.class

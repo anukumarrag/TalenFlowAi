@@ -1,0 +1,10 @@
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/dto/MatchResult.java
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/dto/JdResponse.java
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/dto/CandidateScorecard.java
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/dto/EvaluationRequest.java
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/model/InterviewTranscript.java
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/dto/InterviewResponse.java
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/model/ResumeData.java
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/dto/ResumeUploadResponse.java
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/dto/InterviewRequest.java
+/home/runner/work/TalenFlowAi/TalenFlowAi/common/src/main/java/com/talentflow/common/dto/JdRequest.java
