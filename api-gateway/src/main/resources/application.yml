@@ -1,0 +1,47 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: jd-generator-service
+          uri: ${JD_GENERATOR_URI:http://localhost:8081}
+          predicates:
+            - Path=/api/v1/job-descriptions/**
+        - id: resume-parser-service
+          uri: ${RESUME_PARSER_URI:http://localhost:8082}
+          predicates:
+            - Path=/api/v1/resumes/**
+        - id: interview-service
+          uri: ${INTERVIEW_SERVICE_URI:http://localhost:8083}
+          predicates:
+            - Path=/api/v1/interviews/**
+        - id: evaluation-service
+          uri: ${EVALUATION_SERVICE_URI:http://localhost:8084}
+          predicates:
+            - Path=/api/v1/evaluations/**
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    gateway:
+      enabled: true
