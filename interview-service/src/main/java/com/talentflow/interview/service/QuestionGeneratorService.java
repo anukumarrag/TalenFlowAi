@@ -19,7 +19,7 @@ public class QuestionGeneratorService {
     static {
         TECHNICAL_QUESTIONS.put("java", List.of(
             "Explain the difference between HashMap and ConcurrentHashMap in Java.",
-            "What are the key features introduced in Java 21?",
+            "What are the key features introduced in Java 17?",
             "How does the Java Memory Model handle happens-before relationships?",
             "Explain the concept of virtual threads (Project Loom) and their benefits.",
             "What are sealed classes and how do they improve type safety?",
