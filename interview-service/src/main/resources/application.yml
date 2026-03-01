@@ -1,0 +1,23 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: interview-service
+  datasource:
+    url: jdbc:h2:mem:interviewdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  h2:
+    console:
+      enabled: true
+
+langchain4j:
+  open-ai:
+    api-key: ${OPENAI_API_KEY:demo}
+    model-name: gpt-3.5-turbo
